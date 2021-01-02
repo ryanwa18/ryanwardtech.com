@@ -88,7 +88,7 @@ Next, scp this file over to your raspberry pi, for example:
 $ scp .cache-<username> pi@spotipy.local:/home/pi
 ```
 
-Clone the [SpotiPi repository](https://github.com/ryanwa18/spotipi) to your raspberry pi.
+Clone the [SpotiPi repository](https://github.com/ryanwa18/spotipi) to your raspberry pi. **Make sure these remaining steps are done on your raspberry pi.** You can ssh into the raspberry pi, use vnc or just attach a monitor and keyboard.
 
 ```
 $ git clone https://github.com/ryanwa18/spotipi.git
