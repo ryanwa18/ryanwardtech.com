@@ -59,37 +59,74 @@ Lastly, you will need to edit the application and set the redirect uri to someth
 ![Edit Spotify Developer Application](./spotipi_developer_edit.png)
 
 ### Generate Spotify Authentication File
+
 Before logging into the raspberry pi, you will need to generate an authentication token. To do this, you are going to want to clone my [SpotiPi repository](https://github.com/ryanwa18/spotipi) on your main computer with access to a web browser.
+
 ```
 $ git clone  https://github.com/ryanwa18/spotipi.git
 ```
+
 Next go ahead and change into the directory that the git clone created.
+
 ```
 $ cd spotipi
 ```
+
 Run the generate token script and enter the prompted Spotify credentials saved in the previous step.
+
 ```
 $ bash generate-token.sh
 ```
+
 This will generate a file named `.cache-<username>`
+
+### Copy Authentication File to Raspberry Pi
+
 Next, scp this file over to your raspberry pi, for example:
+
 ```
 $ scp .cache-<username> pi@spotipy.local:/home/pi
 ```
+
 Clone the [SpotiPi repository](https://github.com/ryanwa18/spotipi) to your raspberry pi.
+
 ```
 $ git clone https://github.com/ryanwa18/spotipi.git
 ```
+
+### Move Authentication File to Proper Directory on Raspberry Pi
+
 Move the token file to the repository directory root.
+
 ```
 $ mv <path_to_cache_file> <path_to_cloned_repository>
 ```
-Install the SpotiPi software on your raspberry pi.
+
+### Run the Installation Script to Complete the Build
+
+Install the SpotiPi software on your raspberry pi. Follow the steps on the screen and entered the values when prompted.
+
+* **Spotify Client ID:** the token created on the Spotify developer dashboard
+* **Spotify Client Secret:** the secret token created on the Spotify developer dashboard
+* **Spotify username:** the username for your Spotify account
+* **Spotify Redirect URI:** the redirect uri set within the Spotify developer dashboard
+* **Full path to your spotify token:** the path to where you stored the spotify authentication file on your raspberry pi. (**for example: /home/pi/spotipi/.cache-ryanwa18**)
+
 ```
 $ cd spotipi
 $ sudo bash setup.sh
 ```
-Edit settings on the web app to match your hardware.
+
+Edit settings on the web app to match your hardware. Open your web browser and navigate to the following link.
+
 ```
-navigate to http://<raspberrypi_hostname or ip_address> within a web browser
+http://<raspberrypi_hostname or ip_address>
 ```
+
+Within the web interface, you can perform the following actions:
+* Turn the display on or off.
+* Adjust the brightness of the display.
+* Adjust the size of the display if you are using a 64x64 matrix.
+
+## Thanks for Reading
+Thank you for reading my full build guide for SpotiPi. If you liked it [please consider subscribing to my YouTube channel](https://www.youtube.com/channel/UCv09vbalH7G--ILCkG3l28Q?sub_confirmation=1) for more content like this!
