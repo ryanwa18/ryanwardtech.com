@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Ryan Ward Tech`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Ryan Ward`,
+      summary: `who lives and works in DC building, educating and learning about tech.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A blog for guides on tech, installing software, and building with raspberry pi.`,
+    siteUrl: `https://ryanwardtech.com/`,
     social: {
-      twitter: `kylemathews`,
+      youtube: `channel/UCv09vbalH7G--ILCkG3l28Q?sub_confirmation=1`,
     },
   },
   plugins: [
@@ -33,7 +33,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 400,
+              maxHeight: 400
             },
           },
           {
@@ -53,15 +54,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `G-QCJBB4W2WP`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ryan Ward Tech`,
+        short_name: `RWT`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

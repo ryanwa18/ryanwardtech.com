@@ -1,7 +1,7 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: How to Install Docker on Raspberry Pi
+date: "2021-01-07"
+description: "A full guide on how to install and use docker community edition on any rasberry pi. Docker on raspberry pi is important for running several different services such as pihole, apache, nextcloud, etc."
 ---
 
 This is my first post on my new fake blog! How exciting!
