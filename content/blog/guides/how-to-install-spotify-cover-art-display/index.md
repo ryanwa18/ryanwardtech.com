@@ -1,5 +1,5 @@
 ---
-title: How to Setup a Spotify Cover Art Display
+title: How to Setup a Spotify Cover Art Display with Raspberry Pi
 date: "2021-01-01"
 description: "A full build guide for creating an 'always on' display for showing the cover art of any song playing on your Spotify account. This build uses a raspberry pi zero and a led matrix by Adafruit."
 ---
@@ -32,50 +32,64 @@ In order to reduce flickering of the screen it is **highly** recommended to perf
 
 #### Modification #1
 
-#### Modification #2
+This first modification requires soldering a connecting wire between GPIO pins 4 and 18 on the rgb matrix bonnet.
+
+#### Modification #2 (Only for 64x64 panels)
+
+The next modification is required **only for 64x64 rgb matrix panels**. If you are using a 32x32 rgb matrix, you can ignore this step.
+
+The modification requires 
 
 ### Connecting Components
 
-## Installing Spotipi Software
-After the hardware has been assembled and powered on, you are now ready to install the SpotiPi software.
+## Installing SpotiPi Software
+After the hardware has been assembled and powered on, you are now ready to install the SpotiPi software. This installation is assuming you have already installed Raspbian OS on your Raspberry Pi and can connect to it with ssh, vnc or mouse & keyboard. If you need instructions on how to install Raspbian OS on any Raspberry Pi, [I have written this guide to help out with that.](https://ryanwardtech.com/guides/how-to-install-raspbian-on-sd-card-mac/)
+
 ### Create Spotify Developer Application
-* Create a new application within the [Spotify developer dashboard](https://developer.spotify.com/dashboard/applications) <br />
-* Edit the settings of the application within the dashboard.
-    * Set the redirect uri to any local url such as http://127.0.0.1/callback
+In order to access the Spotify web API you must have a Spotify account. Once you have a Spotify account, you will need to create a new application within the [Spotify developer dashboard](https://developer.spotify.com/dashboard/applications).
+
+![Spotify Developer Application](./spotipi_developer_create.png)
+
+Next you are going to want to **take note of the Spotify Client ID and Spotify Client Secret** in your new application. You will need these during future parts in the setup process for SpotiPi.
+
+![Spotify Developer Application](./spotipi_developer_secrets.png)
+
+Lastly, you will need to edit the application and set the redirect uri to something like http://127.0.0.1/callback 
+
+![Edit Spotify Developer Application](./spotipi_developer_edit.png)
 
 ### Generate Spotify Authentication File
-* Before logging into the raspberry pi, you will need to generate an authentication token.
-* To do this, you are going to want to clone my spotipi repository on your main computer with access to a web browser.
+Before logging into the raspberry pi, you will need to generate an authentication token. To do this, you are going to want to clone my [SpotiPi repository](https://github.com/ryanwa18/spotipi) on your main computer with access to a web browser.
 ```
 $ git clone  https://github.com/ryanwa18/spotipi.git
 ```
-* Next go ahead and change into the directory using 
+Next go ahead and change into the directory that the git clone created.
 ```
 $ cd spotipi
 ```
-* Run the generate token script and enter the prompted spotify credentials using
+Run the generate token script and enter the prompted Spotify credentials saved in the previous step.
 ```
 $ bash generate-token.sh
 ```
-* This will generate a file named `.cache-<username>`
-* You are going to want to scp this file over to your raspberry pi, for example:
+This will generate a file named `.cache-<username>`
+Next, scp this file over to your raspberry pi, for example:
 ```
 $ scp .cache-<username> pi@spotipy.local:/home/pi
 ```
-* Clone the repository to your raspberrypi
+Clone the [SpotiPi repository](https://github.com/ryanwa18/spotipi) to your raspberry pi.
 ```
 $ git clone https://github.com/ryanwa18/spotipi.git
 ```
-* Move the token file to the repository root
+Move the token file to the repository directory root.
 ```
 $ mv <path_to_cache_file> <path_to_cloned_repository>
 ```
-* Install the software: <br />
+Install the SpotiPi software on your raspberry pi.
 ```
 $ cd spotipi
 $ sudo bash setup.sh
 ```
-* Edit settings on the web app: <br />
+Edit settings on the web app to match your hardware.
 ```
 navigate to http://<raspberrypi_hostname or ip_address> within a web browser
 ```
