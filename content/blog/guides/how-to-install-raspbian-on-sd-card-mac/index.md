@@ -1,6 +1,6 @@
 ---
 title: How to Install Raspberry Pi OS on SD Card Mac
-date: "2021-01-05"
+date: "2021-01-06"
 description: "A full build guide for installing Raspberry Pi OS on a SD card using a mac. This guide will help you get up and running on your raspberry pi in no time."
 ---
 
