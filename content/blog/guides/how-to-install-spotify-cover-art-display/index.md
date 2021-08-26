@@ -3,6 +3,10 @@ title: How to Setup a Spotify Cover Art Display with Raspberry Pi
 date: "2021-01-01"
 description: "A full build guide for creating an 'always on' display for showing the cover art of any song playing on your Spotify account. This build uses a raspberry pi zero and a led matrix by Adafruit."
 ---
+## Video Tutorial
+
+`youtube: https://www.youtube.com/watch?v=6i8kzqvh94E&ab_channel=RyanWard`
+
 ## Overview
 This project is to display the cover art of any song you are listening to on a led matrix from the Spotify web api. This has been a huge passion project of mine and I am glad to see that other people have been interested in it as well. Here is what the finished project will look like once it is built:
 

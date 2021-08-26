@@ -4,6 +4,10 @@ date: "2021-01-06"
 description: "A full build guide for installing Raspberry Pi OS on a SD card using a mac. This guide will help you get up and running on your raspberry pi in no time."
 ---
 
+## Video Tutorial
+
+`youtube: https://www.youtube.com/watch?v=3oNRXSiVhfk&ab_channel=RyanWard`
+
 ## Overview
 
 In this full guide, I will show you how to install Raspberry Pi OS on a SD card using a mac or macbook. Installing Raspberry Pi OS on a micro sd card is the first step when setting up a new Raspberry Pi.

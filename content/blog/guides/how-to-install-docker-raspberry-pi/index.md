@@ -3,6 +3,9 @@ title: How to Install Docker on Raspberry Pi
 date: "2021-01-04"
 description: "A full guide on how to install and use docker community edition on any rasberry pi. Docker on raspberry pi is important for running several different services such as pihole, apache, nextcloud, etc."
 ---
+## Video Tutorial
+
+`youtube: https://www.youtube.com/watch?v=wJ5Ii0uT4Mk&ab_channel=RyanWard`
 
 ## Overview
 
