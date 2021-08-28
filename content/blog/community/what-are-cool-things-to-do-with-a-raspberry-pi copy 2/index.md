@@ -2,6 +2,7 @@
 title: Here Are Some Cool Things to Do with Raspberry Pi - January 2021
 date: "2021-01-07"
 description: "Here is a list of some cool things to do with a Raspberry Pi. Raspberry Pi is such an awesome, small computer that can do almost anything with a little bit of imagination."
+thumbnail: ./raspberry_pi_4.jpg
 ---
 
 ![Raspberry Pi 4](./raspberry_pi_4.jpg)

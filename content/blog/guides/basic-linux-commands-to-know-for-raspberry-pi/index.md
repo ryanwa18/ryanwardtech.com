@@ -2,6 +2,7 @@
 title: Basic Linux Commands to Know when Using a Raspberry Pi
 date: "2021-01-08"
 description: "In this post, I am going to share some basic Linux commands that everyone should know when using a Raspberry Pi. This guide for Raspberry Pi and Linux is intended for getting people familiar with the command line."
+thumbnail: ./linux.jpg
 ---
 
 ## Overview

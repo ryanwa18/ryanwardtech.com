@@ -2,6 +2,7 @@
 title: How to Connect WiFi on Raspberry Pi
 date: "2021-01-03"
 description: "A full guide to enable WiFi and connect to your home network on a raspberry pi. This guide shows exactly how to add a file to the SD card for a raspberry pi to connect to WiFi."
+thumbnail: ./raspberry_pi.jpg
 ---
 
 ## Overview

@@ -2,6 +2,7 @@
 title: How to SSH into Raspberry Pi
 date: "2021-01-02"
 description: "A full guide to SSH into any raspberry pi during the initial configuration. Enabling SSH on a raspberry pi allows you to connect to it remotely from any device."
+thumbnail: ./ssh.jpg
 ---
 
 ## Overview

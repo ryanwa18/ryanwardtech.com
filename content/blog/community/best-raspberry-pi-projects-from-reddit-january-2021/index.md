@@ -2,6 +2,7 @@
 title: Best Raspberry Pi Projects from Reddit - January 2021
 date: "2021-01-05"
 description: "A full guide to the best raspberry projects from Reddit in January 2021. Checkout these awesome projects from the raspberry pi subreddit. Leave a comment with a link to your favorite raspberry pi projects."
+thumbnail: ./bitcoin_tracker.png
 ---
 
 ## Overview

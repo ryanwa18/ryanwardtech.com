@@ -2,6 +2,7 @@
 title: How to Display the Price of Bitcoin with a Raspberry Pi
 date: "2021-08-22"
 description: "A full build guide for creating an 'always on' display for showing the price of Bitcoin and other cryptocurrencies with a Raspberry Pi and an e-ink display by Adafruit."
+thumbnail: ./bitcoin_price_display_front.png
 ---
 ## Overview
 This is a fun project with a [Raspberry Pi](https://www.raspberrypi.org/) and an [e-ink](https://www.adafruit.com/product/4687) display to track the current price of Bitcoin and other cryptocurrencies. Here is an image of what the final product looks like: 
