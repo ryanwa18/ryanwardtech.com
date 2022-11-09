@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Ryan Ward Tech`,
+    title: `rwardtech blog`,
     author: {
       name: `Ryan Ward`,
       summary: `who lives and works in DC building, educating and learning about tech.`,
     },
     description: `A blog for guides on tech, installing software, and building with raspberry pi.`,
-    siteUrl: `https://ryanwardtech.com/`,
+    siteUrl: `https://rwardtech.com/`,
     social: {
       youtube: `channel/UCv09vbalH7G--ILCkG3l28Q?sub_confirmation=1`,
     },
@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ryan Ward Tech`,
-        short_name: `RWT`,
+        short_name: `rwardtech`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
