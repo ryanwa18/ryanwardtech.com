@@ -40,6 +40,14 @@ Lastly, you will need to edit the application and set the redirect uri to someth
 
 ![Edit Spotify Developer Application](./spotipi_developer_edit.png)
 
+### Download the Installation Script
+
+Use the following commands to download the install script:
+
+```
+$ wget https://raw.githubusercontent.com/ryanwa18/spotipi-eink/main/setup.sh
+$ chmod +x setup.sh
+```
 
 ### Run the Installation Script to Complete the Build
 
