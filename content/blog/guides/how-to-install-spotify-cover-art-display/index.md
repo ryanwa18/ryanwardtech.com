@@ -43,7 +43,9 @@ This first modification requires soldering a connecting wire between GPIO pins 4
 
 The next modification is required **only for 64x64 rgb matrix panels**. If you are using a 32x32 rgb matrix, you can ignore this step.
 
-The modification requires 
+The modification requires soldering the bottom of the "E" pin on the back of the matrix. Shown below is the soldering modification:
+
+![SpotiPi E Pin Modification](./spotipi_e_pin_mod.jpg)
 
 ### Connecting Components
 
